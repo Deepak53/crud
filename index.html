@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 style="color : white ; margin : 20px">New Employees</h3>
+        <form  class="main" onsubmit="event.preventDefault()">
+            <div class="main-box">
+                <div class="form-container">
+                    <label>Enter Name</label>
+                    <input type="text" class="input"  value="" id="input1">    
+                </div>
+                <div class="form-container">
+                    <label>Enter Profession</label>
+                    <input type="text" class="input" id="input2" value="" >
+                </div>    
+                <div class="form-container">
+                    <label>Enter Age</label>
+                    <input type="Number" class="input" id="input3" value="" >    
+                </div>
+            </div>
+        </form>
+        <button type= "submit" id="btn" onclick="addData()" >
+            Add user
+        </button>
+        <p id="fill" style="color: red;"></p>
+        <h3 style="color : white ; margin : 20px">Added Employees</h3>
+
+        <h5 style="color : rgb(230, 217, 217) ; margin : 20px; font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            You have 0 Employees.
+        </h5>
+
+        <table class="table-list">
+           <tr>
+                <td>Sr no</td>
+                <td>Name</td>
+                <td>Profession</td>
+                <td>Age</td>
+           </tr>
+           <tbody id="putdata"></tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
